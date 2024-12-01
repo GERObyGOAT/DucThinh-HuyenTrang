@@ -1,0 +1,21 @@
+/* Đảm bảo hình ảnh có thể cuộn xuống mà không bị co lại */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    width: 100%;
+    overflow-y: scroll; /* Cho phép cuộn dọc */
+    text-align: center;
+}
+
+.long-image {
+    width: 100%;
+    height: auto; /* Giữ tỷ lệ của hình ảnh */
+}
